@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/body.css">
     <link rel="stylesheet" href="styles/slideshow.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/navbar.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>Acasă - Spirit Lifter</title>
 </head>
 <body>
     <div id="navPlaceholder"></div>
-    <script>
-        $(function(){
-          $("#navPlaceholder").load("navbar.html");
-        });
-        </script>
-    <script src="script/dropdown.js"></script>
+    <ul>
+      <li><a href="index.html">Spirit Lifter</a></li>
+      <li class="dropdown">
+          <a href="index.html" class="dropbtn">Băuturi</a>
+          <div class="dropdown-content">
+              <a href="spirits.html">Spirtoase</a>
+              <a href="wines.html">Vinuri</a>
+              <a href="beer.html">Bere</a>
+          </div>
+      </li>
+      <li><a href="basket.html">Coș</a></li>
+      <li><a href="account.php">Cont</a></li>  
+  </ul>
     <div class="slideshowContainer">
         <div class="slides fade">
             <img src="https://assets.finestore.ro/image/654x615/produse/catalog/products/GG972-654x615.jpg" style="width:100%">
@@ -141,5 +148,5 @@
       <footer>
         <span><p>&copy; 2023 Spirit Lifter. Toate drepturile rezervate.</p></span>
       </footer>
-</body>
+    </body>
 </html>
