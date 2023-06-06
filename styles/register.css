@@ -6,13 +6,9 @@
     margin: 0;
 }
 
-h1 {
-    text-align: center;
-}
-
-.loginContainer {
+.registerContainer {
     display: flex;
-    flex-direction: column; /* Added */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 500px;
@@ -23,6 +19,7 @@ h1 {
     text-align: center;
 }
 
+input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 100%;
@@ -36,7 +33,6 @@ button[type="submit"] {
     color: white;
     border: none;
     padding: 10px;
-    margin-top: 10px;
 }
 
 button[type="submit"]:hover {
@@ -44,18 +40,8 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
-.registerLink {
+.message {
+    color: black;
     margin-top: 10px;
-}
-
-.registerLink a {
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.registerLink a:hover {
-    background-color: red;
-    cursor: pointer;
+    margin-bottom: 10px;
 }
