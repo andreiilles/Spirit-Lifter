@@ -15,6 +15,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
   
@@ -45,6 +46,34 @@
 .product p
 {
     margin-bottom: 10px;
+}
+
+.addToCart
+{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.addToCart:hover
+{
+    background-color: red;
+    cursor: pointer;
+}
+
+#status
+{
+    flex-basis: calc(20% - 10px);
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: 0 -50px;
+    transition: background-color 0.3s ease;
 }
 
 @media (max-width: 768px) 
