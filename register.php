@@ -26,7 +26,7 @@ else
 {
     $insertQuery = "INSERT INTO accounts (nume, prenume, email, password) VALUES ('$name', '$surname','$email', '$password')";
     if ($conn->query($insertQuery) === TRUE) {
-        echo "Registration succesful."; 
+        echo "Înregistrare cu succes."; 
     } else {
         echo "Error: " . $insertQuery . "<br>" . $conn->error;
     }

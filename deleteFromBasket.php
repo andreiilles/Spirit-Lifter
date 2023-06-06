@@ -30,10 +30,10 @@ if (isset($_SESSION['email'])) {
             echo "eroare " . $conn->error;
         }
     } else {
-        echo "User not found.";
+        echo "Utilizator negăsit.";
     }
 } else {
-    echo "Please log in to delete items from your basket.";
+    echo "Trebuie să fi conectat pentru a șterge produse din coș.";
 }
 
 $conn->close();

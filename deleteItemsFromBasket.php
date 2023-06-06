@@ -8,7 +8,7 @@
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        die("Conectare la baza de date eșuată: " . $conn->connect_error);
     }
 
     if (isset($_SESSION['email'])) {
@@ -27,10 +27,10 @@
                 echo "Eroare la golirea coșului. " . $conn->error;
             }
         } else {
-            echo "User not found.";
+            echo "Utilizator negăsit..";
         }
     } else {
-        echo "You must be logged in to proceed.";
+        echo "Trebuie să fii conectat pentru a goli coșul.";
     }
 
     $conn->close();

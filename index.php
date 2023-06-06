@@ -70,7 +70,7 @@
                     url: 'addToBasket.php',
                     data: {
                         product_id: productId,
-                        quantity: 1 //
+                        quantity: 1
                     },
                     success: function(response) {
                         if (response === 'success') {
